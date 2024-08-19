@@ -1,0 +1,353 @@
+/* Variáveis CSS */
+:root {
+  --primary-color: #0057b8;
+  --secondary-color: #333;
+  --highlight-color: #ffcc00;
+  --light-bg-color: #f4f4f4;
+  --border-color: #ccc;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização Global */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o corpo ocupe a altura total da janela */
+}
+
+main {
+  flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilização do Menu Lateral */
+.menu-lateral {
+  width: 100px;
+  background-color: var(--primary-color);
+  padding: 15px;
+  position: fixed;
+  height: 100%;
+  background-image: url('.jpg'); /* Adiciona a imagem de fundo no menu lateral */
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-lateral a:hover {
+  text-decoration: underline;
+}
+
+.menu-lateral ul li a {
+  display: flex;
+  align-items: center;
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.menu-lateral ul li a img {
+  width: 20px; /* Ajuste conforme o tamanho do ícone */
+  height: 20px;
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.menu-lateral ul li a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+/* Estilização do Cabeçalho */
+header {
+  margin-left: 130px;
+  padding: 20px;
+  background-image: url('/IMG/imagem\ titulo.jpg'); /* Caminho exemplo */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+}
+
+/* Estilização do Container Principal */
+.container {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+/* Estilização das Caixas de Serviços */
+.caixa {
+  background-color: var(--light-bg-color);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  width: 30%;
+  text-align: relative;
+  box-shadow: 2px 2px 8px var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caixa:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px var(--shadow-dark);
+}
+
+.caixa h2 {
+  color: var(--primary-color);
+}
+
+.caixa p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilização do Botão */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004494;
+}
+
+/* Estilização do Rodapé */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto; /* Faz o rodapé empurrar para o final da página */
+  width: 100%;
+}
+
+footer a {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilização do Formulário Container */
+.formulario-container {
+  margin-left: 220px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: var(--light-bg-color);
+  border: 1px solid var(--border-color);
+  width: 60%;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 8px var(--shadow-light);
+  text-align: center;
+}
+
+.formulario-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-container label,
+.formulario-container select,
+.formulario-container input,
+.formulario-container button {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario-container .valor-desejado {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.formulario-container .valor-desejado label {
+  margin-right: 10px;
+}
+
+.formulario-container input[type="radio"] {
+  transform: scale(0.8);
+  margin-right: 5px;
+}
+
+.formulario-container .valor-desejado label {
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.formulario-container button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-container button:hover {
+  background-color: #004494;
+}
+
+/* Estilização do Container de Perguntas Frequentes */
+.faq-container {
+  width: 30%;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: var(--light-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px var(--shadow-light);
+}
+
+.faq-container h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.pergunta {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.pergunta:hover {
+  color: #004494;
+}
+
+.resposta {
+  display: none;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.pergunta:hover + .resposta {
+  display: block;
+}
+
+/* Estilização do Container para Formulário e FAQ */
+.form-faq-container {
+  margin-left: 220px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ajuste da Largura do Container do Formulário e FAQ */
+.formulario-container {
+  width: 60%;
+}
+
+.faq-container {
+  width: 30%;
+}
+
+/* Consultas de Mídia para Responsividade */
+@media (max-width: 1200px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .menu-lateral {
+    width: 80px;
+  }
+
+  header {
+    margin-left: 90px;
+  }
+
+  .formulario-container,
+  .faq-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .caixa {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-faq-container {
+    flex-direction: column;
+  }
+
+  .formulario-container,
+  .faq-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-lateral {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  header {
+    margin-left: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-faq-container {
+    flex-direction: column;
+  }
+
+  .formulario-container {
+    width: 100%;
+  }
+
+  .faq-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}

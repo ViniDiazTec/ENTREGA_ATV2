@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Empresa</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<!-- Menu lateral de navegação -->
+<aside class="menu-lateral">
+    <nav>
+        <ul>
+            <!-- Links para as diferentes páginas do site com ícones -->
+            <li>
+                <a href="index.html">
+                    <img src="/IMG/icons8-home-50.png" alt="Ícone Menu">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="pagina1.html">
+                    <img src="/IMG/icons8-get-cash-50.png" alt="Ícone Empréstimo">
+                    Empréstimo
+                </a>
+            </li>
+            <li>
+                <a href="pagina2.html">
+                    <img src="/IMG/icons8-person-50.png" alt="Ícone Cliente">
+                    Cliente
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+    <!-- Cabeçalho do site com o nome da empresa -->
+    <header>
+        <h1>Nome da Empresa</h1>
+    </header>
+
+    <!-- Container principal com as caixas de serviços -->
+    <div class="container">
+        <div class="caixa">
+            <h2>Empréstimo Pessoal</h2>
+            <p>Obtenha crédito rápido e fácil para qualquer finalidade com parcelas que cabem no seu bolso.</p>
+        </div>
+        <div class="caixa">
+            <h2>Empréstimo Consignado</h2>
+            <p>Crédito com taxas de juros reduzidas, descontado diretamente na folha de pagamento, ideal para
+                aposentados, pensionistas e servidores públicos.</p>
+        </div>
+    </div>
+
+    <!-- Container para o formulário e perguntas frequentes -->
+    <div class="form-faq-container">
+        <!-- Formulário de seleção -->
+        <div class="formulario-container">
+            <form>
+                <div>
+                    <label for="tipo-emprestimo">Tipo de Empréstimo:</label>
+                    <select id="tipo-emprestimo">
+                        <option value="pessoal">Empréstimo Pessoal</option>
+                        <option value="consignado">Empréstimo Consignado</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="valor-desejado">Valor Desejado:</label>
+                    <div class="valor-desejado">
+                        <input type="radio" id="valor1" name="valor" value="1000">
+                        <label for="valor1">R$ 1.000</label>
+
+                        <input type="radio" id="valor2" name="valor" value="2000">
+                        <label for="valor2">R$ 2.000</label>
+
+                        <input type="radio" id="valor3" name="valor" value="3000">
+                        <label for="valor3">R$ 3.000</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="meses">Quantidade de Meses:</label>
+                    <input type="number" id="meses" name="meses">
+                </div>
+
+                <div>
+                    <label for="valor-parcela">Valor Total da Parcela Calculado:</label>
+                    <input type="text" id="valor-parcela" name="valor-parcela" readonly>
+                </div>
+
+                <div>
+                    <button type="submit">Seja Nosso Cliente</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Container para perguntas frequentes -->
+        <div class="faq-container">
+            <h3>Perguntas Frequentes</h3>
+            <div class="faq-item">
+                <p class="pergunta">Como posso pagar o financiamento?</p>
+                <p class="resposta">Com débito em conta ou descontando da sua folha de pagamento.</p>
+            </div>
+            <div class="faq-item">
+                <p class="pergunta">Quais são as taxas de juros?</p>
+                <p class="resposta">As taxas de juros variam conforme o tipo de empréstimo e perfil do cliente.</p>
+            </div>
+            <!-- Adicione mais perguntas e respostas conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+    </footer>
+
+</body>
+
+</html>
