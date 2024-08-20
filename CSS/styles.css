@@ -351,3 +351,31 @@ footer a:hover {
     margin-left: 0;
   }
 }
+
+.titulo-principal-container {
+  /* Define a imagem de fundo */
+  background-image: url('/IMG/seja\ nosso\ cliente.jpg');
+  
+  /* Configurações adicionais para a imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Aumentar a altura mínima */
+  min-height: 400px; /* Por exemplo, aumentando para 400px */
+
+  padding: 20px;
+
+  /* Estilização do texto */
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+  font-size: 2.5em; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Deixa a fonte mais espessa */
+  letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas para mais impacto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto para mais destaque */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
